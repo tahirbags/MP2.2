@@ -2,16 +2,14 @@
 
 In this 4-part MP, you will get familiar with building and evaluating Search Engines.
 
-# Part 4
+# Part 2
 
-In the final part of MP2, you will participate in a search competition where you will create a Search Engine using MeTA, similar to what you did for Part 2. Your ranker will be evaluated using NDCG scores on 3 relevance datasets: Cranfield dataset, APNews dataset, and the Faculty dataset collected and annotated by you and your classmates. 
+In the part of MP2, you will participate in a search competition where you will create a Search Engine using MeTA, similar to what you did for Part 1. Your ranker will be evaluated using NDCG scores on 3 relevance datasets: Cranfield dataset, APNews dataset, and the Faculty dataset collected and annotated by you and your classmates. 
 
 **The evaluation results will be displayed on the leaderboard on LiveDataLab. Only your latest submission results will be displayed here.
 Also, the grader will use the default config.toml and stopwords.txt files provided here. So, changing these files will not make any impact on the scores. Please modify search_eval.py only to potentially notice any changes in the scores.**
 
-## Due: Oct 2, 2022 at 11:59 pm CDT
-
-**NOTE:** If you've completed Part2, you should be familiar with the basics: Setup, Indexing and Searching the Data. We've included these sections in this README again for convenience. So, feel free to skip directly to the Competition Tasks section!
+**NOTE:** If you've completed Part1, you should be familiar with the basics: Setup, Indexing and Searching the Data. We've included these sections in this README again for convenience. So, feel free to skip directly to the Competition Tasks section!
 
 ## Setup
 
@@ -37,12 +35,12 @@ Read the [C++ Search Tutorial](https://meta-toolkit.org/search-tutorial.html). R
 Read the [python Search Tutorial](https://github.com/meta-toolkit/metapy/blob/master/tutorials/2-search-and-ir-eval.ipynb)
 
 If you cloned this repo correctly, your assignment directory should look like this:
-- MP2_part4/: assignment folder
-- MP2_part4/cranfield/: Cranfield dataset in MeTA format.
-- MP2_part4/cranfield-queries.txt: Queries one per line, copy it from the cranfield directory.
-- MP2_part4/cranfield-qrels.txt: Relevance judgements for the queries, copy it from the cranfield directory.
-- MP2_part4/stopwords.txt: A file containing stopwords that will not be indexed.
-- MP2_part4/config.toml: A config file with paths set to all the above files, including index and ranker settings.
+- MP2.2/: assignment folder
+- MP2.2/cranfield/: Cranfield dataset in MeTA format.
+- MP2.2/cranfield-queries.txt: Queries one per line, copy it from the cranfield directory.
+- MP2.2/cranfield-qrels.txt: Relevance judgements for the queries, copy it from the cranfield directory.
+- MP2.2/stopwords.txt: A file containing stopwords that will not be indexed.
+- MP2.2/config.toml: A config file with paths set to all the above files, including index and ranker settings.
 
 ## Indexing the data
 To index the data using metapy, you can use either Python 2 or 3.
